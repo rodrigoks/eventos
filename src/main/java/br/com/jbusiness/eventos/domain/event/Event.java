@@ -25,8 +25,16 @@ public class Event {
     private UUID id;
     private String title;
     private String description;
+    private String eventUrl;
     private String imageUrl;
     private Boolean remote;
     private Date date;
+
+    public Event(EventRequestDTO data) {
+        this.title = data.title();
+        this.description = data.description();
+        this.eventUrl = data.eventUrl();
+        this.date = new Date(data.date());
+    }
 
 }
