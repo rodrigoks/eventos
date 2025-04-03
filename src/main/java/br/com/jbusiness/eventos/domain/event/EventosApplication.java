@@ -1,4 +1,4 @@
-package br.com.jbusiness.eventos;
+package br.com.jbusiness.eventos.domain.event;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
